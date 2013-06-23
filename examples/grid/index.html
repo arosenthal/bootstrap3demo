@@ -14,22 +14,22 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap3demo/assets/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
 
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="/bootstrap3demo/assets/js/html5shiv.js"></script>
-  <script src="/bootstrap3demo/assets/js/respond/respond.min.js"></script>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond/respond.min.js"></script>
 <![endif]-->
 
 <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/bootstrap3demo/assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/bootstrap3demo/assets/ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/bootstrap3demo/assets/ico/apple-touch-icon-72-precomposed.png">
-                <link rel="apple-touch-icon-precomposed" href="/bootstrap3demo/assets/ico/apple-touch-icon-57-precomposed.png">
-                               <link rel="shortcut icon" href="/bootstrap3demo/assets/ico/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="/assets/ico/favicon.png">
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -55,16 +55,21 @@
     padding-right: 15px;
   }
 
+  h4 {
+    margin-top: 25px;
+  }
   .row {
     margin-bottom: 20px;
-    margin-left: -15px;
-    margin-right: -15px;
   }
-  [class*="col-span-"] {
+  .row .row {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  [class*="col-lg-"] {
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: #f5f5f5;
-    border: 1px solid #e5e5e5;
+    background-color: rgba(185,74,72,.15);
+    border: 1px solid rgba(185,74,72,.2);
   }
 </style>
 
@@ -76,26 +81,69 @@
 
   <h4>Three equal columns</h4>
   <div class="row">
-    <div class="col-span-4">.col-span-4</div>
-    <div class="col-span-4">.col-span-4</div>
-    <div class="col-span-4">.col-span-4</div>
+    <div class="col-lg-4">.col-lg-4</div>
+    <div class="col-lg-4">.col-lg-4</div>
+    <div class="col-lg-4">.col-lg-4</div>
   </div>
 
   <h4>Three unequal columns</h4>
   <div class="row">
-    <div class="col-span-3">.col-span-3</div>
-    <div class="col-span-6">.col-span-6</div>
-    <div class="col-span-3">.col-span-3</div>
+    <div class="col-lg-3">.col-lg-3</div>
+    <div class="col-lg-6">.col-lg-6</div>
+    <div class="col-lg-3">.col-lg-3</div>
   </div>
 
   <h4>Two columns</h4>
   <div class="row">
-    <div class="col-span-8">.col-span-8</div>
-    <div class="col-span-4">.col-span-4</div>
+    <div class="col-lg-8">.col-lg-8</div>
+    <div class="col-lg-4">.col-lg-4</div>
   </div>
 
   <h4>Full width, single column</h4>
-  <p class="text-muted">No grid classes are necessary for full-width elements.</p>
+  <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+
+  <h4>Two columns with two nested columns</h4>
+  <div class="row">
+    <div class="col-lg-8">
+      .col-lg-8
+      <div class="row">
+        <div class="col-lg-6">.col-lg-6</div>
+        <div class="col-lg-6">.col-lg-6</div>
+      </div>
+    </div>
+    <div class="col-lg-4">.col-lg-4</div>
+  </div>
+
+  <h4>Mixed: mobile and desktop</h4>
+  <div class="row">
+    <div class="col-12 col-lg-8">.col-12 .col-lg-8</div>
+    <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
+    <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
+    <div class="col-6 col-lg-4">.col-6 .col-lg-4</div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-lg-6">.col-6 .col-lg-6</div>
+    <div class="col-6 col-lg-6">.col-6 .col-lg-6</div>
+  </div>
+
+  <h4>Mixed: mobile, tablet, and desktop</h4>
+  <div class="row">
+    <div class="col-12 col-sm-8 col-lg-8">.col-12 .col-lg-8</div>
+    <div class="col-6 col-sm-4 col-lg-4">.col-6 .col-lg-4</div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-sm-4 col-lg-4">.col-6 .col-lg-4</div>
+    <div class="col-6 col-sm-4 col-lg-4">.col-6 .col-lg-4</div>
+    <div class="col-6 col-sm-4 col-lg-4">.col-6 .col-lg-4</div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-sm-6 col-lg-6">.col-6 .col-lg-6</div>
+    <div class="col-6 col-sm-6 col-lg-6">.col-6 .col-lg-6</div>
+  </div>
+
 
 </div> <!-- /container -->
 
@@ -104,25 +152,13 @@
     <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/bootstrap3demo/assets/js/jquery.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-transition.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-alert.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-modal.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-dropdown.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-scrollspy.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-tab.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-tooltip.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-popover.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-button.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-collapse.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-carousel.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-typeahead.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-affix.js"></script>
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
 
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<script src="/bootstrap3demo/assets/js/holder/holder.js"></script>
+<script src="/assets/js/holder/holder.js"></script>
 
-<script src="/bootstrap3demo/assets/js/application.js"></script>
+<script src="/assets/js/application.js"></script>
 
 <!-- Analytics
 ================================================== -->
@@ -139,6 +175,7 @@
     s.parentNode.insertBefore(t, s);
   })();
 </script>
+
 
   </body>
 </html>

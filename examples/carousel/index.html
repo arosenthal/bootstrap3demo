@@ -14,22 +14,22 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap3demo/assets/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
 
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="/bootstrap3demo/assets/js/html5shiv.js"></script>
-  <script src="/bootstrap3demo/assets/js/respond/respond.min.js"></script>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond/respond.min.js"></script>
 <![endif]-->
 
 <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/bootstrap3demo/assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/bootstrap3demo/assets/ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/bootstrap3demo/assets/ico/apple-touch-icon-72-precomposed.png">
-                <link rel="apple-touch-icon-precomposed" href="/bootstrap3demo/assets/ico/apple-touch-icon-57-precomposed.png">
-                               <link rel="shortcut icon" href="/bootstrap3demo/assets/ico/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="/assets/ico/favicon.png">
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -111,14 +111,14 @@ body {
 }
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-span-4 {
+.marketing .col-lg-4 {
   text-align: center;
   margin-bottom: 20px;
 }
 .marketing h2 {
   font-weight: normal;
 }
-.marketing .col-span-4 p {
+.marketing .col-lg-4 p {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -280,14 +280,14 @@ body {
 
     <div class="navbar navbar-inverse navbar-static-top">
       <div class="container">
-	    <a class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+	    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
 	      <span class="icon-bar"></span>
-	    </a>
+	    </button>
         <a class="navbar-brand" href="#">Project name</a>
         <div class="nav-collapse collapse">
-          <ul class="nav">
+          <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -367,24 +367,24 @@ body {
 
   <!-- Three columns of text below the carousel -->
   <div class="row">
-    <div class="col-span-4">
+    <div class="col-lg-4">
       <img class="img-circle" data-src="holder.js/140x140">
       <h2>Heading</h2>
       <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-span-4 -->
-    <div class="col-span-4">
+      <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
       <img class="img-circle" data-src="holder.js/140x140">
       <h2>Heading</h2>
       <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-span-4 -->
-    <div class="col-span-4">
+      <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
+    <div class="col-lg-4">
       <img class="img-circle" data-src="holder.js/140x140">
       <h2>Heading</h2>
       <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn" href="#">View details &raquo;</a></p>
-    </div><!-- /.col-span-4 -->
+      <p><a class="btn btn-default" href="#">View details &raquo;</a></p>
+    </div><!-- /.col-lg-4 -->
   </div><!-- /.row -->
 
 
@@ -394,7 +394,7 @@ body {
 
   <div class="featurette">
     <img class="featurette-image img-circle pull-right" data-src="holder.js/512x512">
-    <h2 class="featurette-heading">First featurette headling. <span class="text-muted">It'll blow your mind.</span></h2>
+    <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
     <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
   </div>
 
@@ -432,25 +432,13 @@ body {
     <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/bootstrap3demo/assets/js/jquery.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-transition.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-alert.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-modal.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-dropdown.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-scrollspy.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-tab.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-tooltip.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-popover.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-button.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-collapse.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-carousel.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-typeahead.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-affix.js"></script>
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
 
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<script src="/bootstrap3demo/assets/js/holder/holder.js"></script>
+<script src="/assets/js/holder/holder.js"></script>
 
-<script src="/bootstrap3demo/assets/js/application.js"></script>
+<script src="/assets/js/application.js"></script>
 
 <!-- Analytics
 ================================================== -->
@@ -467,6 +455,7 @@ body {
     s.parentNode.insertBefore(t, s);
   })();
 </script>
+
 
   </body>
 </html>

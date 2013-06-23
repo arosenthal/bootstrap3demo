@@ -14,26 +14,26 @@
 </title>
 
 <!-- Bootstrap core CSS -->
-<link href="/bootstrap3demo/assets/css/bootstrap.css" rel="stylesheet">
+<link href="/assets/css/bootstrap.css" rel="stylesheet">
 
 
 <!-- Documentation extras -->
-<link href="/bootstrap3demo/assets/css/docs.css" rel="stylesheet">
-<link href="/bootstrap3demo/assets/css/pygments-manni.css" rel="stylesheet">
+<link href="/assets/css/docs.css" rel="stylesheet">
+<link href="/assets/css/pygments-manni.css" rel="stylesheet">
 
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-  <script src="/bootstrap3demo/assets/js/html5shiv.js"></script>
-  <script src="/bootstrap3demo/assets/js/respond/respond.min.js"></script>
+  <script src="/assets/js/html5shiv.js"></script>
+  <script src="/assets/js/respond/respond.min.js"></script>
 <![endif]-->
 
 <!-- Favicons -->
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/bootstrap3demo/assets/ico/apple-touch-icon-144-precomposed.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/bootstrap3demo/assets/ico/apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/bootstrap3demo/assets/ico/apple-touch-icon-72-precomposed.png">
-                <link rel="apple-touch-icon-precomposed" href="/bootstrap3demo/assets/ico/apple-touch-icon-57-precomposed.png">
-                               <link rel="shortcut icon" href="/bootstrap3demo/assets/ico/favicon.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/ico/apple-touch-icon-72-precomposed.png">
+                <link rel="apple-touch-icon-precomposed" href="/assets/ico/apple-touch-icon-57-precomposed.png">
+                               <link rel="shortcut icon" href="/assets/ico/favicon.png">
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -50,40 +50,75 @@
   </head>
   <body class="bs-docs-home">
 
-    <!-- Page content of course! -->
-    <div class="bs-docs-jumbotron masthead">
+    <!-- Docs master nav -->
+    <div class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
   <div class="container">
+    <a href="/" class="navbar-brand">Bootstrap</a>
+    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="nav-collapse collapse bs-navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="/getting-started">Getting started</a>
+        </li>
+        <li>
+          <a href="/css">CSS</a>
+        </li>
+        <li>
+          <a href="/components">Components</a>
+        </li>
+        <li>
+          <a href="/javascript">JavaScript</a>
+        </li>
+        <li>
+          <a href="/customize">Customize</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Page content of course! -->
+    <div class="container">
+  <div class="bs-masthead">
 
     <h1>Bootstrap</h1>
     <p class="lead">Sleek, intuitive, and powerful mobile-first front-end framework for faster and easier web development.</p>
     <p>
       <a href="assets/bootstrap.zip" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Download', 'Download 3.0.0']);">Download Bootstrap</a>
-      <a href="./docs/" class="btn btn-large" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Docs', 'View docs']);">View docs</a>
     </p>
 
-    <div class="bs-docs-social">
-      <ul class="bs-docs-social-buttons">
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
-        </li>
-        <li>
-          <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
-        </li>
-        <li class="follow-btn">
-          <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
-        </li>
-        <li class="tweet-btn">
-          <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
-        </li>
-      </ul>
-    </div>
+    <div class="bs-social">
+  <ul class="bs-social-buttons">
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=watch&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+    </li>
+    <li>
+      <iframe class="github-btn" src="http://ghbtns.com/github-btn.html?user=twitter&repo=bootstrap&type=fork&count=true" allowtransparency="true" frameborder="0" scrolling="0" width="102px" height="20px"></iframe>
+    </li>
+    <li class="follow-btn">
+      <a href="https://twitter.com/twbootstrap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @twbootstrap</a>
+    </li>
+    <li class="tweet-btn">
+      <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://twitter.github.com/bootstrap/" data-count="horizontal" data-via="twbootstrap" data-related="mdo:Creator of Twitter Bootstrap">Tweet</a>
+    </li>
+  </ul>
+</div>
 
-    <ul class="masthead-links">
+
+    <ul class="bs-masthead-links">
+      <li>
+        <a href="./customize/" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Customize']);">Customize</a>
+      </li>
       <li>
         <a href="http://github.com/twitter/bootstrap" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'GitHub project']);">GitHub project</a>
       </li>
       <li>
-        <a href="./docs/#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
+        <a href="./getting-started/#examples" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Examples']);">Examples</a>
       </li>
       <li>
         <a href="http://expo.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Jumbotron actions', 'Jumbotron links', 'Expo']);">Bootstrap Expo</a>
@@ -99,25 +134,13 @@
     <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="/bootstrap3demo/assets/js/jquery.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-transition.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-alert.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-modal.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-dropdown.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-scrollspy.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-tab.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-tooltip.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-popover.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-button.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-collapse.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-carousel.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-typeahead.js"></script>
-<script src="/bootstrap3demo/assets/js/bootstrap-affix.js"></script>
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/bootstrap.js"></script>
 
 <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<script src="/bootstrap3demo/assets/js/holder/holder.js"></script>
+<script src="/assets/js/holder/holder.js"></script>
 
-<script src="/bootstrap3demo/assets/js/application.js"></script>
+<script src="/assets/js/application.js"></script>
 
 <!-- Analytics
 ================================================== -->
@@ -134,6 +157,7 @@
     s.parentNode.insertBefore(t, s);
   })();
 </script>
+
 
   </body>
 </html>
